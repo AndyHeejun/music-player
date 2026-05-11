@@ -5,14 +5,11 @@
 #include <vector>
 
 class MusicLibrary {
-
 private:
     std::vector<Song> songs;
 
 public:
-
     void addSong(const Song& song);
-    
     void displaySongs() const;
 
     Song findSong(const std::string& title) const;

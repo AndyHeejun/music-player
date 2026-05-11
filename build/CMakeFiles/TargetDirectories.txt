@@ -1,0 +1,6 @@
+/Users/andyjeon/Desktop/CIS 25/music-player/build/CMakeFiles/music_lib.dir
+/Users/andyjeon/Desktop/CIS 25/music-player/build/CMakeFiles/music_player.dir
+/Users/andyjeon/Desktop/CIS 25/music-player/build/CMakeFiles/tests.dir
+/Users/andyjeon/Desktop/CIS 25/music-player/build/CMakeFiles/test.dir
+/Users/andyjeon/Desktop/CIS 25/music-player/build/CMakeFiles/edit_cache.dir
+/Users/andyjeon/Desktop/CIS 25/music-player/build/CMakeFiles/rebuild_cache.dir
