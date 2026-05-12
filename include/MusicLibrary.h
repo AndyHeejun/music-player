@@ -20,6 +20,8 @@ public:
 
     void saveToFile(const std::string& filename) const;
 
+    bool removeSong(const std::string& title);
+
     int getSongCount() const;
 };
 
