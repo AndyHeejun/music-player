@@ -11,7 +11,7 @@ int main() {
         std::cout << "1. Add Song\n";
         std::cout << "2. Play Song\n";
         std::cout << "3. Display All Songs\n";
-        std::cout << "4. Search Songs\n";
+        std::cout << "4. Rmove Song\n";
         std::cout << "5. Playlist Management\n";
         std::cout << "6. Exit\n";
 

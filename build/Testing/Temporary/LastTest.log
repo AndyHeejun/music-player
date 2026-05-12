@@ -1,10 +1,10 @@
-Start testing: May 11 00:25 PDT
+Start testing: May 12 04:00 PDT
 ----------------------------------------------------------
 1/1 Testing: FeatureTests
 1/1 Test: FeatureTests
 Command: "/Users/andyjeon/Desktop/CIS 25/music-player/build/tests"
 Directory: /Users/andyjeon/Desktop/CIS 25/music-player/build
-"FeatureTests" start time: May 11 00:25 PDT
+"FeatureTests" start time: May 12 04:00 PDT
 Output:
 ----------------------------------------------------------
 Running tests...
@@ -14,11 +14,11 @@ Boundary condition... Song added successfully.
 PASSED
 All tests passed.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.30 sec
 ----------------------------------------------------------
 Test Passed.
-"FeatureTests" end time: May 11 00:25 PDT
+"FeatureTests" end time: May 12 04:00 PDT
 "FeatureTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 11 00:25 PDT
+End testing: May 12 04:00 PDT

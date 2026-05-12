@@ -47,6 +47,23 @@ void MusicLibrary::saveToFile(const std::string& filename) const {
     (void)filename;
 }
 
+
+bool MusicLibrary::removeSong(const std::string& title) {
+
+    for (int i = 0; i < songs.size(); i++) {
+
+        if (songs[i].getTitle() == title) {
+
+            songs.erase(songs.begin() + i);
+
+            return true;
+        }
+    }
+
+    return false;
+}
+
+
 int MusicLibrary::getSongCount() const {
     return songs.size();
 }

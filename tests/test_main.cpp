@@ -55,3 +55,57 @@ int main() {
 
     return 0;
 }
+
+void test_remove_song_normal() {
+
+    std::cout << "Remove song normal... ";
+
+    MusicLibrary library;
+
+    Song song("Yesterday", "The Beatles", 125);
+
+    library.addSong(song);
+
+    bool removed = library.removeSong("Yesterday");
+
+    assert(removed == true);
+
+    assert(library.getSongCount() == 0);
+
+    std::cout << "PASSED\n";
+}
+
+
+void test_remove_song_not_found() {
+
+    std::cout << "Remove song not found... ";
+
+    MusicLibrary library;
+
+    bool removed = library.removeSong("Fake Song");
+
+    assert(removed == false);
+
+    assert(library.getSongCount() == 0);
+
+    std::cout << "PASSED\n";
+}
+
+void test_remove_song_boundary() {
+
+    std::cout << "Remove song boundary... ";
+
+    MusicLibrary library;
+
+    library.addSong(Song("A", "Artist1", 100));
+    library.addSong(Song("B", "Artist2", 200));
+
+    bool removed = library.removeSong("A");
+
+    assert(removed == true);
+
+    assert(library.getSongCount() == 1);
+
+    std::cout << "PASSED\n";
+}
+
