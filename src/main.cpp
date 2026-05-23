@@ -40,15 +40,39 @@ int main() {
         }
 
         else if (choice == 2) {
-            std::cout << "TODO: Play Song\n";
-        }
+
+        std::string title;
+
+        std::cin.ignore();
+
+        std::cout << "Enter song title to play: ";
+        std::getline(std::cin, title);
+
+        library.playSong(title);
+}
 
         else if (choice == 3) {
             library.displaySongs();
         }
 
         else if (choice == 4) {
-            std::cout << "TODO: Search Songs\n";
+
+            std::string title;
+
+            std::cin.ignore();
+
+            std::cout << "Enter song title to remove: ";
+            std::getline(std::cin, title);
+
+            bool removed = library.removeSong(title);
+
+            if (removed) {
+                std::cout << "Song removed successfully.\n";
+            }
+
+            else {
+                std::cout << "Song not found.\n";
+            }
         }
 
         else if (choice == 5) {

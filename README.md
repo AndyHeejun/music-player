@@ -24,3 +24,48 @@ A command-line program for managing and playing songs.
 **Known Issues**:
 - Save/load system not implemented yet
 - Search and playlist features are still placeholders
+
+
+
+
+## Current Status
+
+Implemented:
+- Add song
+- Display songs
+- Remove song
+
+Still stubbed:
+- Play song
+- Playlist management
+- Save to file
+
+AI assistance was used for the Remove Song feature.
+See docs/ai_collaboration.md
+
+
+
+# Music Library Project
+
+A simple console-based music library application written in C++.
+
+
+
+## Features
+
+Implemented:
+- Add songs
+- Display songs
+- Remove songs
+- Find songs
+- Play songs
+
+Stubbed / Not Finished:
+- Playlist management
+- Save library to file
+
+## Build Instructions
+
+```bash
+cmake -S . -B build
+cmake --build build
