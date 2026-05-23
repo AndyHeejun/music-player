@@ -22,17 +22,34 @@ void MusicLibrary::displaySongs() const {
 }
 
 Song MusicLibrary::findSong(const std::string& title) const {
-    // TODO: Implement later
 
-    (void)title;
+    for (const auto& song : songs) {
+
+        if (song.getTitle() == title) {
+            return song;
+        }
+    }
+
     return Song();
 }
 
 void MusicLibrary::playSong(const std::string& title) const {
-    // TODO: Implement later
 
-    (void)title;
-    std::cout << "[MusicLibrary::playSong] not yet implemented\n";
+    Song song = findSong(title);
+
+    if (song.getTitle() == "") {
+
+        std::cout << "Song not found.\n";
+    }
+
+    else {
+
+        std::cout << "Now playing: "
+                  << song.getTitle()
+                  << " by "
+                  << song.getArtist()
+                  << "\n";
+    }
 }
 
 void MusicLibrary::createPlaylist() {

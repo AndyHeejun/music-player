@@ -4,6 +4,19 @@
 #include "../include/Song.h"
 #include "../include/MusicLibrary.h"
 
+
+
+void test_add_song_normal();
+void test_add_song_empty();
+void test_library_boundary();
+
+void test_remove_song_normal();
+void test_remove_song_not_found();
+void test_remove_song_boundary();
+
+void test_find_song();
+
+
 void test_add_song_normal() {
     std::cout << "Normal operation... ";
 
@@ -50,6 +63,13 @@ int main() {
     test_add_song_normal();
     test_add_song_empty();
     test_library_boundary();
+
+    test_remove_song_normal();
+    test_remove_song_not_found();
+    test_remove_song_boundary();
+
+    test_find_song();
+
 
     std::cout << "All tests passed.\n";
 
@@ -109,3 +129,19 @@ void test_remove_song_boundary() {
     std::cout << "PASSED\n";
 }
 
+void test_find_song() {
+
+    std::cout << "Find song... ";
+
+    MusicLibrary library;
+
+    Song song("Yesterday", "The Beatles", 125);
+
+    library.addSong(song);
+
+    Song found = library.findSong("Yesterday");
+
+    assert(found.getTitle() == "Yesterday");
+
+    std::cout << "PASSED\n";
+}
